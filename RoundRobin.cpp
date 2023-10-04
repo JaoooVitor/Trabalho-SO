@@ -1,18 +1,18 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h> // Para lidar com strings
+#include <string.h> 
 #define tam 15 // Número máximo de processos
 
 struct Processo {
-    char nome[50]; // Nome do processo
-    int chegada;   // Tempo de chegada
-    int tempo_uso; // Tempo de uso do CPU
+    char nome[50]; 
+    int chegada;   
+    int tempo_uso; 
 };
 
 int NumProcesso;
-int quantum; // Número de vezes que será executado o processo
+int quantum; 
 
-struct Processo processos[tam]; // Fila de processos
+struct Processo processos[tam]; 
 
 // Função de comparação para ordenar os processos com base no tempo de chegada e tempo de uso
 int comparar_processos(const void *a, const void *b) {
